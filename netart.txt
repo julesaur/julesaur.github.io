@@ -19,6 +19,9 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
 </head>
 </head>
 <body>
@@ -54,8 +57,10 @@
 
 
   <h2>Net Art:Spaced Out</h2>
-  
+<div class="container">
 
+<button type="button" class="btn btn-dark">Click Here</button>
+  <a href="" class="w3-btn w3-black">Link Button</a></div>
 </body>
 
 </html>
