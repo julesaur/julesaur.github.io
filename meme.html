@@ -19,7 +19,44 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
+<head>
+<style>
+div.transbox {
+  margin: 5px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 1%;
+  font-weight: bold;
+  color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+</style>
 </head>
 <body>
 
@@ -54,10 +91,12 @@
 	</br></br></br></br></br>
 
 
-<div class="container">
-  <h2>Meme Mash Up</h2>
-  
-  <img class="img-fluid" src="catbully.jpg" alt="Chania" width="460" height="345"> 
+<div style="text-align:center">
+<div class="transbox">
+      <h2>Meme Mash Up</h2>
+    <p>I mashed between a pusheen sh*tposting and a Disney villan's not so photogenic moment</p>
+    <img src="catbully.jpg" alt="catbully" style="width:100%">
+  </div>
 </div>
 
 </body>
