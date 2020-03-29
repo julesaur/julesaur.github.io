@@ -19,7 +19,44 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-</head>
+<head>
+      <style>
+div.transbox {
+  margin: 5px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+div.transbox p {
+  margin: 1%;
+  font-weight: bold;
+  color: #000000;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+</style>
 </head>
 <body>
 
@@ -49,12 +86,35 @@
 
 
 <br><br><br><br><br>
-<div class="container">
-  <h2>Glitch Art</h2>
-  
-  <img class="img-fluid" src="hwflower.jpg" alt="Chania" width="460" height="345"> 
+<div style="text-align:center">
+<div class="transbox">
+      <h2>Glitches Artwork</h2>
+    <p>Look at the differences: GLITCH vs AUDIO corresponding to top and bottom</p>
+  </div>
 </div>
-
+<div class="center">
+<div class="row">
+  <div class="column">
+    <img src="hwflower.jpg" alt="hawaiianflower" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="sunflower.jpg" alt="sunflowerry" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="icecram.jpg" alt="velveticecream" style="width:100%">
+    <br><br>
+  </div>
+    <div class="column">
+    <img src="hwflowercopy.jpg" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="sunflowercopy.jpg" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="icecreamcopy.jpg" alt="Mountains" style="width:100%">
+  </div>
+</div>
+ </div>
 </body>
 
 </html>
