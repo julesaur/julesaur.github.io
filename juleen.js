@@ -12,9 +12,10 @@ function draw() {
   
   //ME//
 noStroke();
+
   //hair// 
   fill(83,76,79);
-  rect(290,80, 220, 263);
+  rect(290, 140, 220, 203);
   arc(400, 140, 220, 200, PI, TWO_PI);
   fill(100)
  
@@ -24,14 +25,19 @@ noStroke();
   fill(83,76,79)
   
   
+    //eyebrows//
+  arc(358, 145, 40, 7, PI, TWO_PI);
+  arc(445, 145, 50, 7, PI, TWO_PI);
+  
   //bangs//
-  triangle(400, 20, 251, 310, 308, 80);
+  triangle(400, 50, 261, 300, 328, 80);
   fill(83,76,79);
   ellipse(455, 240, 5, 5);
   
   //ear//
     fill(252, 221, 187);
     ellipse(455, 190, 95, 60);
+
   //earring//
     fill(236,223, 122);
     ellipse(500, 210, 10, 30);
@@ -53,7 +59,6 @@ noStroke();
 
   
 //body//
-
 fill(58, 49, 111);
 rect(315, 320, 180, 160, 50, 50, 1, 1);
     fill(255,104, 31);
@@ -77,30 +82,27 @@ line(390, 170, 410, 170);
 line(475, 170, 495, 170);
 strokeWeight(4)
   stroke(1)
+
   //wink//
  arc(360, 185, 40, 20, PI, TWO_PI);
  
     //eyelashes//
 line(335, 170, 340, 180);
   line(350, 165, 350, 175);
-   //eyebrows//
-   arc(358, 145, 40, 7, PI, TWO_PI);
-   arc(438, 145, 50, 7, PI, TWO_PI);
-  //grin//
   
+ 
+   
   
-  
-  ///blush//
 
-   stroke(238,201,208);
+  ///blush//
+  stroke(238,201,208);
     line(350, 230, 360, 240);
     line(340, 230, 350, 240);
     line(440, 230, 450, 240);
     line(450, 230, 460, 240);
   
     //nose//
-
-  noFill();
+noFill();
   stroke(243, 192, 151);
     arc(400,220, 15, 20, PI, TWO_PI);
   
@@ -120,9 +122,8 @@ ellipse(470, 100, 20, 20);
     //bubble speech//
       fill(255);
   stroke(1);
-rect(40, 105, 185, 105);
+  rect(40, 105, 185, 105);
   fill(1);
-  
   rect(42, 109, 10, 10);
   rect(35, 120, 10, 90);
   rect(42, 209, 10, 10);
@@ -131,6 +132,7 @@ rect(40, 105, 185, 105);
   rect(223, 117, 10, 85);
   rect(50, 95, 160, 10);
    rect(210, 109, 13, 10);
+
   //blackborders//
    rect(135, 209, 10, 40);
    rect(140, 240, 40, 20);
@@ -145,6 +147,7 @@ rect(40, 105, 185, 105);
   rect(145, 209, 40, 40);
   rect(170, 240, 20, 20);
   rect(189, 260, 10, 10);
+
 //message//
   textSize(28);
   fill(100);
