@@ -22,7 +22,7 @@ body {
 }
 
 nav {
-      padding: 8px;
+      padding: 40px;
 }
 
 .logo {
@@ -42,7 +42,7 @@ nav {
 }
 
 nav ul {
-      float: right;
+      float: center;
 }
 
 nav ul li {
