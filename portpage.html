@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+      
+
+      <title>Julee's Website</title>
+
+<meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Minimal Responsive Navigation | HTML & CSS</title>
+      <link rel="stylesheet" href="pinkcopy.css">
+</head>
+
+
+
+
+
+<style>
+
+* {
+  box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: #f2f3f4;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+ 
+      position: relative; 
+      padding:10px;
+      box-sizing: border-box;
+      list-style: none;
+      background: none;
+      color:#742733;
+      border: 1px solid white;
+      margin-right: 15px;
+      font-family:monospace;
+      text-transform:uppercase;
+
+
+
+
+
+}
+
+
+.btn.active {
+ background: #E5D1D2;
+color:black;
+}
+</style>
+
+
+
+<body>
+   <div class="container">
+            <nav>
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="llogo">
+                        <a href="index.html"><big>Julee Nhek</big></a>
+                  </div>
+                  <div class="nav-wrapper">
+                        <ul>
+                              <li><a href="index.html">Home</a></li>
+                              <li><a href="about.html" >About</a></li>
+                              <li><a href="artwork.html">Portfolio</a></li>
+                              <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                  </div>
+            </nav>
+      </div>
+
+
+
+  </br></br></br></br></br>
+
+<!-- MAIN (Center website) -->
+
+<div class="main">
+
+<div style="text-align:center">
+<div class="transbox">
+<div id="myBtnContainer">
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  
+</div>
+  </div>
+</div>
+<!-- Portfolio Gallery Grid -->
+
+<div class="row">
+  <div class="column all">
+    <div class="content">
+      <a href="glitch.html"> 
+      <img src="sunflowercopy.jpg" alt="flower" style="width:100%">
+      </a>
+      <h4>Glitch</h4>
+      <p>More Info</p>
+    </div>
+  </div>
+  <div class="column all">
+    <div class="content">
+     <a href="meme.html"> 
+    <img src="catbully.jpg" alt="house" style="width:100%">
+     </a>
+      <h4>Meme</h4>
+     
+    
+    </div>
+  </div>
+  <div class="column all">
+    <div class="content">
+      <a href="minecraft.html"> 
+    <img src="fronth.jpg" alt="sofa" style="width:100%">
+     </a>
+      <h4>Mine Craft</h4>
+      <p>More Info</p>
+    </div>
+  </div>
+  
+  <div class="column all">
+    <div class="content">
+      <a href="netart.html">
+      <img src="netpage.jpg" alt="netart" style="width:100%">
+      </a>
+
+      <h4>Net Art</h4>
+
+      <p>More Info</p>
+    </div>
+  </div>
+  <div class="column all">
+    <div class="content">
+      <a href="3dprint.html">
+    <img src="eraser.jpg" alt="eraser" style="width:100%">
+  </a>
+      <h4>3-D Printing</h4>
+      <p>More Info</p>
+    </div>
+  </div>
+  <div class="column all">
+    <div class="content">
+      <a href="final.html">
+    <img src="shapemadness.jpg" alt="Car" style="width:100%">
+  </a>
+      <h4>Final</h4>
+      <p>More Info</p>
+    </div>
+  </div>
+
+  <div class="column all">
+    <div class="content">
+      <a href="code-as-art.html">
+      <img src="itsjulee.png" alt="cvclogo" style="width:100%">
+    </a>
+      <h4>Code Art: Self-Portrait</h4>
+      <p>More Info</p>
+    </div>
+  </div>
+  <div class="column all">
+    <div class="content">
+    <img src="diy.jpg alt="orchidtealogo" style="width:100%">
+      <h4>Code Art: DIY Photoshop</h4>
+      <p>More Info</p>
+    </div>
+  </div>
+  <div class="column all">
+    <div class="content">
+    <img src="https://picsum.photos/300/200?random=1" alt="Car" style="width:100%">
+      <h4>Woman</h4>
+      <p>Lorem ipsum dolor..</p>
+    </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<!-- END MAIN -->
+</div>
+
+
+ 
+    <script  src="function.js"></script>
+<script>
+      
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("column");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+
+</script>
+
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
