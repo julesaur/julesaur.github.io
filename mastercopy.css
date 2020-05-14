@@ -41,6 +41,36 @@ nav {
       text-decoration: none;
 }
 
+
+.btn{
+
+      position: absolute;
+      top: 68%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+}
+
+button{
+      padding:16px 42px;
+      font-family:monospace;
+      font-weight:300;
+      text-transform:uppercase;
+      background:rgba(0,0,0,0);
+      color:#fff;
+      transition: .3s;
+      font-size:18px;
+      border:1px solid #fff;
+}
+
+button:hover{transition:.3
+      background:#fff;
+      color:#000;
+
+      ;}
+
+
+
+
 nav ul {
       float: right;
 }
