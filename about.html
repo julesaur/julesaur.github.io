@@ -29,7 +29,25 @@ div.transbox p {
   color: #000000;
 }
 
+* {
+  box-sizing: border-box;
+}
 
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px;
+  /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 </style>
 
@@ -67,31 +85,64 @@ div.transbox p {
 
 
 	</br></br></br></br></br>
-
 <div style="text-align:center">
-<div class="transbox">
-   <h2> Digital Media Art Student @ SJSU </h2>
+   <h2> About Me</h2>
    </div>
-    <br>
-<h3>"I am currently navigating endless opportunites to become an emerging Website Designer!"</h3>
-<br>
-<h4>
-  
-Goals <br>
-
-  <li>Create original and appealing designs for future clients</li>
-  <li>Promote lacking bussinesses' websites</li>
-  <li>Network with others with similar needs</li>
-
-</h4>
-
 
 </div>
 
+<div class="transbox">
+   <h3 style="text-align:center">My Story</h3>
+  
+<p>I am a student at San Jose State University who is studying Digital Media Arts. I'm excited to find a job that's a combination of art and tech. Mostly looking to expand my web design skills, but flexible in any job to gain a meaningful experience! Currently I am navigating endless opportunites to become an emerging Website Designer after I graduate.</p>
+
+
+   </div>
 
 
 
 
+<div class="row">
+  <div class="column" style="background-color:#E5D1D3;">
+    <h3 style="text-align:center">Core Skills</h3>
+   <p> 
+  <li>Internet Savvy</li>
+  <li>HTML/CSS</li>
+  <li>Visual Communication Design</li>
+  <li>Adobe Suite Creative</li>
+  <li>Javascript</li>
+  <li>Individual and/or teamwork</li>
+
+
+  </p>
+  </div>
+  <div class="column" style="background-color: #DCAE96 ;">
+    <h3 style="text-align:center">Future Goals</h3>
+    <p> 
+  <li>Create original and appealing designs for future clients</li>
+  <li>Promote lacking bussinesses' websites</li>
+  <li>Network with others with similar needs</li></p>
+  </div>
+
+  </p>
+  </div>
+  <div class="column" style="background-color: #fffacd;">
+    <h3 style="text-align:center">Achievements</h3>
+    <p> 
+  <li>Won a design sticker competition for dorm merch</li>
+  <li>Designed a digital appplication online with Javascript to map workflow</li>
+  <li>Created a simulation game using Java</li></p>
+  </div>
+
+<div class="row">
+  <div class="column" style="background-color:#D2E1E4;">
+    <h3 style="text-align:center">Motto</h3>
+   <p> 
+"Being someone that doesn't have any worries or regrets can be pretty boring"
+<br>
+<br>
+"Opportunist at its finest."
+</p>
 
 </body>
 
