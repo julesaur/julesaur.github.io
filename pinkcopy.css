@@ -18,8 +18,7 @@ body {
       font-weight: 400;
        background: url(https://images.unsplash.com/photo-1515923019249-6b544314450f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80);
       background-position: center;
-      background-size: cover;
-      background-repeat: repeat-y;
+      
 }
 
 nav {
@@ -236,7 +235,7 @@ nav ul li a {
 .dropdown-content a {
   float: none;
   color: black;
-  padding:  5px 16px;
+  padding:  6px 16px;
   text-decoration: none;
   display: block;
   text-align: left;

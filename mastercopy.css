@@ -24,7 +24,9 @@ body {
 nav {
       padding: 40px;
 }
-
+a:hover {
+   border-style: double;
+  }
 .logo {
       float: left;
       padding: 8px;
