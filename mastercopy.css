@@ -22,22 +22,28 @@ body {
 }
 
 nav {
-      padding: 20px;
+      padding: 8px;
+      margin-left: 16px;
+      margin-top: 8px;
 }
 a:hover {
    border-style: double;
   }
 .logo {
-      float: center;
+      float: left;
+      padding: 8px;
+      margin-left: 16px;
+      margin-top: 8px;
 }
 
 .logo a {
       color: #0b0014;
       text-transform: normal;
       font-weight: 700;
-      font-size: 45px;
+      font-size: 32px;
       letter-spacing: 0px;
       text-decoration: none;
+
 }
 
 
@@ -71,15 +77,19 @@ button:hover{transition:.3
 
 
 nav ul {
-      float: center;
-      padding: 8px;
-      margin-left: 470px;
-      margin-top: 8px;
+      float: right;
+  background-color: #e0afa0;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+    display: block;
+
 }
 
 nav ul li {
       display: inline-block;
-      float: left;
+      float: center;
 }
 
 nav ul li:not(:first-child) {
@@ -93,7 +103,7 @@ nav ul li:last-child {
 nav ul li a {
       display: inline-block;
       outline: none;
-      color: #0b0014;
+      color: #000;
       text-transform: uppercase;
       text-decoration: none;
       font-size: 18px;
@@ -156,7 +166,7 @@ nav ul li a {
       .nav-wrapper ul li a {
             padding: 10px 24px;
             opacity: 0;
-            color: #742733;
+            color: #000;
             font-size: 14px;
             font-weight: 600;
             letter-spacing: 1.2px;
@@ -180,7 +190,7 @@ nav ul li a {
             display: block;
             width: 20px;
             height: 2px;
-            background: #742733;
+            background: #000;
             border-radius: 2px;
             margin-left: 14px;
       }
@@ -204,7 +214,7 @@ nav ul li a {
 }
 
 #nav:checked + .nav-btn i {
-      background: #742733;
+      background: #000;
       transition: transform 0.2s ease;
 }
 
