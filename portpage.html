@@ -19,81 +19,87 @@
 
 <style>
 
-* {
-  box-sizing: border-box;
+.section {
+  font-weight:500;
+  font-size:1.6rem;
+  line-height:1.3;
+  margin: 0 0 4em;
 }
-
-/* Center website */
-.main {
-  max-width: 1000px;
-  margin: auto;
-}
-
-h1 {
-  font-size: 50px;
-  word-break: break-all;
-}
-
-.row {
-  margin: 10px -16px;
-}
-
-/* Add padding BETWEEN each column */
-.row,
-.row > .column {
-  padding: 8px;
-}
-
-/* Create three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  display: none; /* Hide all elements by default */
-}
-
-/* Clear floats after rows */ 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Content */
-.content {
-  background-color: #f5f3ef;
-  padding: 10px;
-}
-
-/* The "show" class is added to the filtered elements */
-.show {
-  display: block;
-}
-
-/* Style the buttons */
-.btn {
- 
-      position: relative; 
-      padding:10px;
-      box-sizing: border-box;
-      list-style: none;
-      background: none;
-      color:#742733;
-      border: 1px solid white;
-      margin-right: 15px;
-      font-family:monospace;
-      text-transform:uppercase;
-
-
-
-
+.project{
+  display:block;
+  width:100;
+  text-decoration:none;
+  margin: 1em 0;
+  cursor:pointer;
 
 }
-
-
-.btn.active {
- background: transparent;
-color:#742733;
+figure{
+  margin:0;
+  padding:0;
 }
+.project figure img {
+  width:100%;
+  display:block;
+  object-fit:cover;
+  height:300px;
+}
+.project figcaption {
+  padding: 1em;
+  background: #e0afa0;
+  color: #fff;
+}
+.project h3 {
+  color: white;
+  margin: 0;
+}
+.cta{
+  margin: .5em 0;
+}
+.cta:after{
+  content: '\f061';
+  margin: 0 0 .5em .5em;
+}
+
+@media screen and (min-width:960px) {
+  .wrapper{
+    max-width:960px;
+    margin: 0 auto;
+  }
+  .containing {
+    display: grid;
+    grid-template-columns:
+    repeat(3,1fr);
+    grid-gap: 1em;
+  }
+
+ .project{
+  width: 100%;
+  height:300px;
+  text-decoration:none;
+  margin:0;
+ }
+ .project figure{
+  position:relative;
+  overflow: hidden;
+ }
+ .project figure img {
+  z-index:999;
+  transition: transform 0.4s;
+ }
+ .project figure:hover img {
+  transform: translateY(-90px);
+ }
+ .project figcaption {
+  position:absolute;
+  left:0;
+  bottom:0;
+  padding:20px;
+  height: 90px;
+  width:100%;
+ }
+
+}
+
 </style>
 
 
@@ -126,186 +132,63 @@ color:#742733;
 
   </br></br></br></br></br>
 
-<!-- MAIN (Center website) -->
 
-<div class="main">
-
-<div style="text-align:center">
-<div class="transbox">
-<div id="myBtnContainer">
-  <button class="text-align:center" onclick="filterSelection('all')"> Portfolio</button>
- 
-</div>
-  </div>
-</div>
-<!-- Portfolio Gallery Grid -->
-
-<div class="row">
-  <div class="column all">
-    <div class="content">
-      <a href="glitch.html"> 
-      <div style="text-align:center">
-      <img src="sunflow.png" alt="flower" style="width:90%">
-    </div>
+<section class="section">
+  <div class="wrapper">
+    <div class="containing">
+      <a class="project" href="#">
+      <figure>
+        <img src="sunflowercopy.jpg" alt="glitch"
+        title="Flower Glitch Project">
+        <figcaption>
+          <div>
+            <h3>Flower Glitch Project</h3>
+            <p class="cta">View Project</p>
+          </div>
+        </figcaption>
+      </figure>
       </a>
-      <h4>Glitch</h4>
-      <a href="glitch.html"> 
-      <p>More Info</p>
+            <a class="project" href="#">
+      <figure>
+        <img src="netpage.jpg" alt="netart"
+        title="Spaced Out">
+        <figcaption>
+          <div>
+            <h3>Netart:Spaced Out</h3>
+            <p class="cta">View Project</p>
+          </div>
+        </figcaption>
+      </figure>
       </a>
-    </div>
-  </div>
-  <div class="column all">
-    <div class="content">
-     <a href="meme.html"> 
-    <img src="catbully.jpg" alt="house" style="width:100%">
-     </a>
-      <h4>Meme</h4>
-       <a href="meme.html"> 
-     <p>More Info</p>
-     </a>
-    
-    </div>
-  </div>
-  <div class="column all">
-    <div class="content">
-      <a href="minecraft.html"> 
-    <img src="fronth.jpg" alt="sofa" style="width:100%">
-     </a>
-      <h4>Minecraft</h4>
-      <a href="minecraft.html"> 
-      <p>More Info</p>
-       </a>
-    </div>
-  </div>
-  
-  <div class="column all">
-    <div class="content">
-      <a href="netart.html">
-      <img src="netpage.jpg" alt="netart" style="width:100%">
+            <a class="project" href="#">
+      <figure>
+        <img src="shapemadness.jpg" alt="final"
+        title="Shape Shade Madness">
+        <figcaption>
+          <div>
+            <h3>Shape Shade Madness</h3>
+            <p class="cta">View Project</p>
+          </div>
+        </figcaption>
+      </figure>
       </a>
-      <h4>Net Art</h4>
-<a href="netart.html">
-      <p>More Info</p>
+               <a class="project" href="#">
+      <figure>
+        <img src="itsjulee.png" alt="its me"
+        title="self-portrait">
+        <figcaption>
+          <div>
+            <h3>Code Art Self-Portrait</h3>
+            <p class="cta">View Project</p>
+          </div>
+        </figcaption>
+      </figure>
       </a>
+
     </div>
-  </div>
-  <div class="column all">
-    <div class="content">
-      <a href="3dprint.html">
-        <div style="text-align:center">
-    <img src="eraser.jpg" alt="eraser" style="width:80%">
-  </div>
-  </a>
-      <h4>3-D Printing</h4>
-      <a href="3dprint.html">
-      <p>More Info</p>
-      </a>
-    </div>
-  </div>
-  <div class="column all">
-    <div class="content">
-      <a href="final.html">
-    <img src="shapemadness.jpg" alt="final project" style="width:100%">
-  </a>
-      <h4>Final</h4>
-      <a href="final.html">
-      <p>More Info</p>
-      </a>
-    </div>
-  </div>
+      <div>
 
-  <div class="column all">
-    <div class="content">
-      <a href="code-as-art.html">
-      <img src="itsjulee.png" alt="selfie" style="width:100%">
-    </a>
-      <h4>Code Art: Self-Portrait</h4>
-      <a href="code-as-art.html">
-      <p>More Info</p>
-      </a>
-    </div>
-  </div>
-  <div class="column all">
-    <div class="content">
-      <a href="diyshop.html">
-    <img src="diy.jpg" alt="canvas art" style="width:100%">
-    <a>
-      <h4>Code Art: DIY Photoshop</h4>
-      <a href="diyshop.html">
-      <p>More Info</p>
-      <a>
-    </div>
-  </div>
-  <div class="column all">
-    <div class="content">
-      <a href="gametuff.html">
-        <div style="text-align:center">
-    <img src="game.png" alt="game" style="width:87%">
-  </div>
-  </a>
-      <h4>Code Art: Game</h4>
-      <a href="gametuff.html">
-      <p>More Info</p>
-      </a>
-    </div>
-  </div>
-<!-- END GRID -->
-</div>
-
-<!-- END MAIN -->
-</div>
-
-
- 
-    <script  src="function.js"></script>
-<script>
-      
-
-filterSelection("all")
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
-
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
-
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);     
-    }
-  }
-  element.className = arr1.join(" ");
-}
-
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
-  });
-}
-
-</script>
+</section>
 
 
 
