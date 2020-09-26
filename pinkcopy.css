@@ -86,14 +86,14 @@ body {
 
 .navbar a:hover, .subnav:hover .subnavbtn {
  border-style: double;
- color:black;
+ color:#f2efe9;
 }
 
 .subnav-content {
   display: none;
   position: absolute;
   left: 0;
-  background-color: #A9BFC8;
+  background-color: black;
   width: 100%;
   z-index: 1;
 }
@@ -105,7 +105,7 @@ body {
 }
 
 .subnav-content a:hover {
- color:#970248;
+ color:#A9BFC8;
  border-style: double;
 }
 
