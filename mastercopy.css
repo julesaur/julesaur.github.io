@@ -16,27 +16,42 @@ body {
       height: 100vh;
       font-family: 'Fira Code', monospace;
       font-weight: 400;
-      background-color: #f5e9e2;
+      background-color:#970248;
+      /*background-color: #f5e9e2;*/
       background-position: center;
       
 }
+.content{
+  width: 95%;
+  margin-left: 2.5%;
+  min-height: 100vh;
+  /*background: #f2efe9;*/
+  background-image: url("orchidintro.jpg");
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 
-nav {
+}
+
+/*nav {
       padding: 8px;
       margin-left: 16px;
-      margin-top: 8px;
-}
-a:hover {
+      margin-right: 16px;
+      margin: 8px ;
+}*/
+/*border bigger*/
+/*a:hover {
    border-style: double;
-  }
-.logo {
+  }*/
+/*.logo {
       float: left;
       padding: 8px;
-      margin-left: 16px;
-      margin-top: 8px;
-}
+      /*margin-left: 16px;*/
+      /*margin-top: 8px;
+}*/
 
-.logo a {
+/*.logo a {
       color: #0b0014;
       text-transform: normal;
       font-weight: 700;
@@ -44,7 +59,7 @@ a:hover {
       letter-spacing: 0px;
       text-decoration: none;
 
-}
+}*/
 
 
 .btn{
@@ -73,34 +88,52 @@ button:hover{transition:.3
 
       ;}
 
+@media (max-width: 1150px){
+  ul{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index: 99;
+    background: #970248;
+    width:100%;
+    margin:0;
+    text-align: center;
+
+      }
+      .logo{
+        /*width:100%;*/
+        margin-left:0;
+        text-align:center;
+      }
+
+}
 
 
-
-nav ul {
+/*nav ul {
       float: right;
-  background-color: #e0afa0;
-  padding-top: 10px;
+  /*background-color: #e0afa0;*/
+/*  padding-top: 10px;
   padding-right: 10px;
   padding-bottom: 10px;
   padding-left: 20px;
     display: block;
 
-}
+}*/
 
-nav ul li {
+/*nav ul li {
       display: inline-block;
       float: center;
-}
+}*/
 
-nav ul li:not(:first-child) {
+/*nav ul li:not(:first-child) {
       margin-left: 38px;
 }
 
 nav ul li:last-child {
       margin-right: 24px;
-}
+}*/
 
-nav ul li a {
+/*nav ul li a {
       display: inline-block;
       outline: none;
       color: #000;
@@ -109,9 +142,9 @@ nav ul li a {
       font-size: 18px;
       letter-spacing: 1.2px;
       font-weight: 600;
-}
+}*/
 
-@media screen and (max-width: 864px) {
+/*@media screen and (max-width: 864px) {
       .logo {
             padding: 0;
       }
@@ -238,11 +271,11 @@ nav ul li a {
 #nav:checked ~ .nav-wrapper ul li a {
       opacity: 1;
       transform: translateX(0);
-}
+}*/
 
-.hidden {
+/*.hidden {
       display: none;
-}
+}*/
 
 .dropdown {
   float: left;
@@ -287,7 +320,26 @@ nav ul li a {
   display: block;
 }
 
+.burgundy{
+  margin: 5em 4%;
+  padding: 10px;
+  background-image: url(orchidintro.jpg);
+      mix-blend-mode: screen;
+}
 
+.mountain{
+  position: absolute;
+    top: 14%;
+    right: 50px;
+    /*width: 600px;
+    height: 600px;*/
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    mix-blend-mode: screen;
+    pointer-events: none;
+}
 
 
 
