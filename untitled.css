@@ -60,7 +60,6 @@ background: white;
 	width: 95%;
 	margin-left: 2.5%;
 	min-height: 100vh;
-	/*background: #f2efe9;*/
 	background-image: url("orchidintro.jpg");
 	position: relative;
 	overflow: hidden;
@@ -73,7 +72,6 @@ background: white;
 .box{
 	width: 700px;
 	height: 500px;
-	/*border: 5px double #970248;*/
 	margin-left: 100px;
 	position: relative;
 }
@@ -93,10 +91,8 @@ img{
 .text{
 	width: 720px;
 	padding: 50px;
-	color:#970248;
-	/*color: #970248;*/
+	color:#970248;	
 	position: absolute;
-	/*background: #f2efe9;*/
 	margin-left: 50px;
 	top:50%;
 	left: 0;
@@ -130,7 +126,7 @@ img{
 .text a:hover{
 	color: #970248;
 	background: #f2efe9;
-	/*background: white;*/
+
 }
 
 @media (max-width: 1150px){
@@ -146,7 +142,7 @@ img{
 
 			}
 			.logo{
-				/*width:100%;*/
+				
 				margin-left:0;
 				text-align:center;
 			}
@@ -159,7 +155,7 @@ img{
 	}
 	.box{
 		margin-left: 0;
-		/*font-size: 80%;*/
+
 	}
 }
 .content{
