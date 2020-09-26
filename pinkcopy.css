@@ -16,8 +16,7 @@ body {
       height: 100vh;
       font-family: 'Fira Code', monospace;
       font-weight: 400;
-       background-color:#f5e9e2;
-       background-position: center;
+       background-image: url("orchidintro.jpg");
       
 }
 
@@ -57,7 +56,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: #e0afa0; 
+  background-color: #970248; 
 }
 
 .navbar a {
