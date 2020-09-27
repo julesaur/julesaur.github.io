@@ -28,7 +28,7 @@
       <style>
 div.transbox {
   margin: 5px;
-  border: 1px solid black;
+  border: 1px solid #9A9A9A;
 }
 
 div.transbox p {
@@ -37,24 +37,24 @@ div.transbox p {
 }
 
 
-.fixed-bg {
+.parallax {
+  /* The image used */
   background-image: url("netpage.jpg");
-  min-height: 500px;
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.btn {
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
 
       </style>
@@ -97,18 +97,31 @@ div.transbox p {
   </div>
 </div>
 
-<br><br>
+
+
+
+
+
+<!-- CONTENT---------------------------->
+<div style="text-align:center">
+<!--   <div class="transbox"> -->
+    <h2>Net Art:Spaced Out *Desktop Recommended*</h2>
+  </div>
+  <a href="https://julesaur.github.io/netart/first.html">
+    <div class="parallax"></div>
+    <div style="text-align:center">
+      </a> 
 <div style="text-align:center">
   <div class="transbox">
-    <h2>Net Art:Spaced Out [Desktop Recommended]</h2>
     <p>This was an inspiration of a video I watched recently about a woman who wanted to live till 38 because she couldn't find happiness or love yet. I can relate to her story because sometimes I overthink and lost hope about certain situations. However, I don't tend to show it and instead hide it with a smile. :)</p>
     
   </div>
+</div>
 
 
-<a href="https://julesaur.github.io/netart/first.html">
+<!-- <a href="https://julesaur.github.io/netart/first.html">
 <div class="fixed-bg"></div>
-</a> 
+</a>  -->
 
 </body>
 
