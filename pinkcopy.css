@@ -27,7 +27,8 @@ nav {
 
 }
 a:hover {
-   border-style: double;
+    color:#970248;
+background: white;
   }
 
 .logo {
@@ -85,8 +86,8 @@ body {
 }
 
 .navbar a:hover, .subnav:hover .subnavbtn {
- border-style: double;
- color:#f2efe9;
+ color:#970248;
+ background: white;
 }
 
 .subnav-content {
@@ -105,8 +106,8 @@ body {
 }
 
 .subnav-content a:hover {
- color:#A9BFC8;
- border-style: double;
+ color:#970248;
+ background: white;
 }
 
 .subnav:hover .subnav-content {
