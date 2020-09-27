@@ -24,7 +24,7 @@
       <style>
 div.transbox {
   margin: 5px;
-  border: 1px solid black;
+  border: 1px solid #9A9A9A;
 }
 
 div.transbox p {
@@ -34,13 +34,14 @@ div.transbox p {
 
 .column {
 
-   -ms-flex: 25%; /* IE10 */
-  flex: 25%;
-  max-width: 50%;
-  padding: 0 4px;
-    float: left;
-
-  padding: 10px;
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+    /* float: left; */
+    padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 @media screen and (max-width: 660px) {
@@ -124,16 +125,12 @@ div.desc {
 <div class="center">
 <div class="row">
   <div class="column">
-    
+      <div class="transbox">
     <img src="livinroom.png" alt="butterflyflower" style="width:100%">
-  </div>
- 
-    <h3 style="text-decoration: underline;">Description</h3>
-    <p>The color is gray</p>
-    <p>The sofa is leather material</p>
-    <p>The room only consist of a sofa and a wall flat tv.</p>
 
- 
+    <p>It room is gray which complements the sofa's choice of color. The leather material of the sofa stands out in an empty spacea with the company of the wall flat tv screen.</p>
+
+    </div>
     </div>
     </div>
     </div>
