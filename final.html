@@ -28,7 +28,7 @@
       <style>
 div.transbox {
   margin: 5px;
-  border: 1px solid black;
+  border: 1px solid #9A9A9A;
 }
 
 div.transbox p {
@@ -37,27 +37,31 @@ div.transbox p {
 }
 
 
-.fixed-bg {
+.parallax {
+  /* The image used */
   background-image: url("shapemadness.jpg");
-  min-height: 500px;
+
+  /* Full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.btn {
-
-  border: none;
-  color: black;
-  padding: 16px 32px;
-  text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
+
+
+
+
+
+
       </style>
 </head>
 <body>
@@ -99,18 +103,23 @@ div.transbox p {
 </div>
 
 
-<br><br>
+
+
+    <div style="text-align:center">
+       <h2>Shape Shade Madness *Desktop Recommended*</h2>
+     </div>
+       <a href="https://julesaur.github.io/shapingmadness/">
+        <div class="parallax"></div>
+        </a> 
+
 <div style="text-align:center">
   <div class="transbox">
-    <h2>Shape Shade Madness [Desktop Recommended]</h2>
     <p>I expanded my code art game which was called, "Shape Shade Madness". I decide to create more levels on the way to reach a reasonable ending. Therefore, I would use a combination of Netart and Code Art Game for my final project. I will code buttons on each webpage for navigating each level of the game along with embedded iframe P5js editor to play. After completing each level there is a message of each shape's POV.</p>
     
   </div>
+</div>
 
 
-<a href="https://julesaur.github.io/shapingmadness/">
-<div class="fixed-bg"></div>
-</a> 
 
 
 </body>
