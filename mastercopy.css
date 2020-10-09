@@ -17,7 +17,6 @@ body {
       font-family: 'Fira Code', monospace;
       font-weight: 400;
       background-color:#970248;
-      /*background-color: #f5e9e2;*/
       background-position: center;
       
 }
@@ -25,8 +24,7 @@ body {
   width: 95%;
   margin-left: 2.5%;
   min-height: 100vh;
-  /*background: #f2efe9;*/
-  background-image: url("orchidintro.jpg");
+  background-color: #FFEEF3;
   position: relative;
   overflow: hidden;
   display: flex;
