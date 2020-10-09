@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Latest compiled and minified CSS -->
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="pinkcopy.css">
+<link rel="stylesheet" href="mastercopy.css">
+<link rel="stylesheet" href="nav.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -37,88 +38,159 @@ div.transbox p {
 }
 
 
-.parallax {
-  /* The image used */
-  background-image: url("shapemadness.jpg");
+/*------------------subnav!-----------------*/
 
-  /* Full height */
-  height: 100%; 
+.subnav {
+  float: right;
+  overflow: hidden;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-@media only screen and (max-device-width: 1366px) {
-  .parallax {
-    background-attachment: scroll;
-  }
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+/*  padding: 14px 16px;*/
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
 }
 
+.navbar a:hover, .subnav:hover .subnavbtn {
+ color:#970248;
+ background: white;
+}
 
+.subnav-content {
+   display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
 
+}
 
+.subnav-content a {
+  color: white;
+  text-decoration: none;
+}
 
+.subnav-content a:hover {
+ color:#970248;
+ background: white;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/*color the text*/
+p{
+  color:white;
+}
+
+h2{
+  color:white;
+}
 
       </style>
 </head>
 <body>
- <div class="navbar">
-       <div class="logo">
-                        <a href="index.html"><big>Julee Nhek</big></a>
-                  </div>
-        <a href="portart.html">All</a>
-  <div class="subnav">
-    <button class="subnavbtn">CAD<i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="revitslides.html">Revit Modern Villa</a>
-      <a href="flowerkeychain.html">Flower Keychain</a>
-      <a href="pearls.html">Radiance of Pearls</a>
-    </div>
-  </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Video<i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <!-- <a href="floweroftrust.html">Friendship Bracelets Story</a> -->
-      <a href="allurepg.html">Allure</a>
-    </div>
-  </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Graphic Art<i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="glitch.html">Flower Glitch Project</a>
-      <a href="hireaser.html">Hi-Polymer Eraser Minecraft</a>
-      <a href="code-as-art.html">Code Self Portrait</a>
-    </div>
-  </div>
-    <div class="subnav">
- <button class="subnavbtn">Web Design<i class="fa fa-caret-down"></i></button> 
-     <div class="subnav-content">
-      <a href="netart.html">Net Art</a>
-      <a href="final.html">Shape Shade Madness</a>
-    </div>
-  </div>
-</div>
-
-
-<!-- CONTENT-------------------------- -->
-
-    <div style="text-align:center">
-       <h2>Shape Shade Madness *Desktop Recommended*</h2>
-     </div>
-       <a href="https://julesaur.github.io/shapingmadness/">
-        <div class="parallax"></div>
-        </a> 
+<!---------------------------nav--------------------------------------->
 
 <div style="text-align:center">
+        <div class="container">
+
+            <nav class="header">
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
+                        <a href="index.html"><big>Julee Nhek</big></a>
+   
+                  </div>
+
+                  <div class="nav-wrapper">
+
+                        <ul style="margin-top: 0px;margin-bottom: 0px;">
+
+                          <!------------Graphic---------- -->
+                        <div class="subnav">
+                          <li>
+                            <button class="subnavbtn">Graphic Art
+                            <i class="fa fa-caret-down"></i></button></li>
+                              <div class="subnav-content">
+                            <a href="glitch.html">Flower Glitch Project</a>
+                            <br>
+                            <a href="hireaser.html">Hi-Polymer Eraser Minecraft</a>
+                            <br>
+                            <a href="code-as-art.html">Code Self Portrait</a>
+                            </div>
+                            </div>
+
+                            <!------------CAD---------- -->
+                      <div class="subnav">
+                          <li>
+                            <button class="subnavbtn">CAD
+                            <i class="fa fa-caret-down"></i></button></li>
+                              <div class="subnav-content">
+                            <a href="revitslides.html">Revit Modern Villa</a>
+                            <br>
+                            <a href="flowerkeychain.html">Flower Keychain</a>
+                            <br>
+                            <a href="pearls.html">Radiance of Pearls</a>
+                            </div>
+                            </div>
+                            <!------------CAD---------- -->
+                      <div class="subnav">
+                          <li>
+                            <button class="subnavbtn">Video
+                            <i class="fa fa-caret-down"></i></button></li>
+                              <div class="subnav-content">
+                            <a href="floweroftrust.html">Friendship Bracelets Story</a>
+                            <br>
+                            <a href="allurepg.html">Allure</a>
+                            </div>
+                            </div>
+
+                               <!------------Web Design---------- -->
+
+                      <div class="subnav">
+
+                          <li>
+                            <button class="subnavbtn">Web Design
+                            <i class="fa fa-caret-down"></i></button></li>
+                              <div class="subnav-content">
+                            <a href="netart.html">Net Art</a>
+                            <br>
+                            <a href="final.html">Shape Shade Madness</a>
+                            </div>
+                            </div>          
+                              
+                        </ul>
+                  </div>
+            </nav>
+          </div>
+
+
+
+<!---------------------------content--------------------------------------->
+
+
+<div style="text-align:center">
+  <h2>Shape Shade Madness</h2>
   <div class="transbox">
-    <p>I expanded my code art game which was called, "Shape Shade Madness". I decide to create more levels on the way to reach a reasonable ending. Therefore, I would use a combination of Netart and Code Art Game for my final project. I will code buttons on each webpage for navigating each level of the game along with embedded iframe P5js editor to play. After completing each level there is a message of each shape's POV.</p>
+    <p>(Desktop Recommended if play)I expanded my code art game which was called, "Shape Shade Madness". I decide to create more levels on the way to reach a reasonable ending. Therefore, I would use a combination of Netart and Code Art Game for my final project. I will code buttons on each webpage for navigating each level of the game along with embedded iframe P5js editor to play. After completing each level there is a message of each shape's POV.</p>
     
   </div>
 </div>
-
+<iframe src="https://julesaur.github.io/shapingmadness/" width="100%" height="600"title="Shape Shade Madness"></iframe>
 
 
 
