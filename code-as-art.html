@@ -6,7 +6,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Latest compiled and minified CSS -->
 <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="pinkcopy.css">
+<link rel="stylesheet" href="mastercopy.css">
+<link rel="stylesheet" href="nav.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -32,48 +33,144 @@ div.transbox p {
   margin: 1%;
   font-weight: bold;
 }
+/*------------------subnav!-----------------*/
+
+.subnav {
+  float: right;
+  overflow: hidden;
+
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+/*  padding: 14px 16px;*/
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+ color:#970248;
+ background: white;
+}
+
+.subnav-content {
+   display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+
+}
+
+.subnav-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+ color:#970248;
+ background: white;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
 
 
 </style>
 </head>
- <div class="navbar">
-       <div class="logo">
+<body>
+ <!---------------------------nav--------------------------------------->
+
+<div style="text-align:center">
+        <div class="container">
+
+            <nav class="header">
+                  <input type="checkbox" id="nav" class="hidden">
+                  <label for="nav" class="nav-btn">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                  </label>
+                  <div class="logo">
                         <a href="index.html"><big>Julee Nhek</big></a>
+   
                   </div>
-        <a href="portart.html">All</a>
-  <div class="subnav">
-    <button class="subnavbtn">CAD<i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="revitslides.html">Revit Modern Villa</a>
-      <a href="flowerkeychain.html">Flower Keychain</a>
-      <a href="pearls.html">Radiance of Pearls</a>
-    </div>
-  </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Video<i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <!-- <a href="floweroftrust.html">Friendship Bracelets Story</a> -->
-      <a href="allurepg.html">Allure</a>
-    </div>
-  </div> 
-  <div class="subnav">
-    <button class="subnavbtn">Graphic Art<i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="glitch.html">Flower Glitch Project</a>
-      <a href="hireaser.html">Hi-Polymer Eraser Minecraft</a>
-      <a href="code-as-art.html">Code Self Portrait</a>
-    </div>
-  </div>
-    <div class="subnav">
- <button class="subnavbtn">Web Design<i class="fa fa-caret-down"></i></button> 
-     <div class="subnav-content">
-      <a href="netart.html">Net Art</a>
-      <a href="final.html">Shape Shade Madness</a>
-    </div>
-  </div>
-</div>
+
+                  <div class="nav-wrapper">
+
+                        <ul style="margin-top: 0px;margin-bottom: 0px;">
+
+                          <!------------Graphic---------- -->
+                        <div class="subnav">
+                          <li>
+                            <button class="subnavbtn">Graphic Art
+                            <i class="fa fa-caret-down"></i></button></li>
+                              <div class="subnav-content">
+                            <a href="glitch.html">Flower Glitch Project</a>
+                            <br>
+                            <a href="hireaser.html">Hi-Polymer Eraser Minecraft</a>
+                            <br>
+                            <a href="code-as-art.html">Code Self Portrait</a>
+                            </div>
+                            </div>
+
+                            <!------------CAD---------- -->
+                      <div class="subnav">
+                          <li>
+                            <button class="subnavbtn">CAD
+                            <i class="fa fa-caret-down"></i></button></li>
+                              <div class="subnav-content">
+                            <a href="revitslides.html">Revit Modern Villa</a>
+                            <br>
+                            <a href="allurepg.html">Allure</a>
+                            <br>
+                            <a href="pearls.html">Radiance of Pearls</a>
+                            </div>
+                            </div>
+                            <!------------CAD---------- -->
+                      <div class="subnav">
+                          <li>
+                            <button class="subnavbtn">Video
+                            <i class="fa fa-caret-down"></i></button></li>
+                              <div class="subnav-content">
+                            <a href="floweroftrust.html">Friendship Bracelets Story</a>
+                            <br>
+                            <a href="allurepg.html">Allure</a>
+                            </div>
+                            </div>
+
+                               <!------------Web Design---------- -->
+
+                      <div class="subnav">
+
+                          <li>
+                            <button class="subnavbtn">Web Design
+                            <i class="fa fa-caret-down"></i></button></li>
+                              <div class="subnav-content">
+                            <a href="netart.html">Net Art</a>
+                            <br>
+                            <a href="final.html">Shape Shade Madness</a>
+                            </div>
+                            </div>          
+                              
+                        </ul>
+                  </div>
+            </nav>
+          </div>
+
+
+
+<!---------------------------content--------------------------------------->
 
 <br><br>
+ <div class="content">
   <div style="text-align:center">
 <div class="transbox">
       <h2>Code Art</h2>
@@ -85,6 +182,7 @@ div.transbox p {
   <img src="itsjulee.png" alt="realme" style="width:70%">
 
 <iframe src="juleen.js" height="620"width="600" style="width:70%"></iframe>
+</div>
 </div>
 
 
