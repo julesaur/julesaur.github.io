@@ -60,7 +60,7 @@ background: white;
 	width: 95%;
 	margin-left: 2.5%;
 	min-height: 100vh;
-	background-image: url("orchidintro.jpg");
+	background-image: url("lovesmall.jpg");
 	position: relative;
 	overflow: hidden;
 	display: flex;
@@ -70,10 +70,11 @@ background: white;
 }
 
 .box{
-	width: 700px;
+	width: 600px;
 	height: 500px;
 	margin-left: 100px;
 	position: relative;
+
 }
 
 img{
