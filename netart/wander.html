@@ -13,13 +13,6 @@
 <style>
 
 
-
-
-.floatleft {
-float: left;
-margin: 0 200px 0 0;
-}
-
 .row ul {
   text-align: center;
 }
@@ -37,7 +30,42 @@ margin: 0 200px 0 0;
   clear: both;
   display: table;
 }
+* {
+  box-sizing: border-box;
+}
 
+img{
+
+ margin: 20px;
+  border-style: double 
+  color: transparent;
+
+
+}
+
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+[class*="col-"] {
+
+  padding: 15px;
+  width: 100%;
+
+}
+
+
+.aside {
+  background-color: transparent;
+  padding: 15px;
+  color: black;
+  text-align: center;
+  text-justify: inter-word;
+
+}
 
 body {
   background-image: url(https://images.unsplash.com/photo-1578403414495-5bb49bf9447b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80
@@ -108,7 +136,13 @@ img:hover {
 
 <body>
 
-<img class="floatleft" src="scientist.jpg" alt="woman scientist" style="width:300px">
+<div style="text-align:center">
+
+<div class="row">
+    <div class="aside">
+
+<h1 class="glow">Welcome to my secret laboratory in space!</font></h1>
+<img src="scientist.jpg" alt="woman scientist" style="width:300px">
 
 
 <p id="demo"></p>
@@ -118,11 +152,8 @@ img:hover {
 
 </audio>
 
-
-
-<h1 class="glow">Welcome to my secret laboratory in space!</font></h1>
 <br>
-<h2> <font color="FFD4CA">
+<h2> <font color="#ff1493 ">
 
 Hello my name is Sherry and I am a chemist.
 <br><br>
@@ -133,7 +164,9 @@ I don't have enough time, but would you do a favor for me?
 <a href="selectpotion.html" class=button>Sure!</a>
 <a href="thirdpage.html" class=button>Sorry I have to go</a>
 
-
+    </div>
+</div>
+  </div>
 </body>
 
 </html>
