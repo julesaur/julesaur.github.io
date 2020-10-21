@@ -70,9 +70,10 @@ background: white;
 }
 
 .box{
-	width: 600px;
-	height: 500px;
-	margin-left: 100px;
+	width: 700px;
+	height: 400px;
+	background:white;
+	margin-left: 200px;
 	position: relative;
 
 }
@@ -85,7 +86,7 @@ img{
 	height: 600px;
 	display: block;
 	object-fit: cover;
-	mix-blend-mode: color;
+	mix-blend-mode: screen;
 	pointer-events: none;
 }
 
