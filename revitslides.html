@@ -30,7 +30,6 @@
 div.transbox {
   margin: 5px;
   border: 1px solid #9A9A9A;
-  background-color: #FFEEF3 
 }
 
 div.transbox p {
@@ -54,7 +53,6 @@ img {
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
-  background-color:#FFEEF3;
 }
 
 /* Hide the images by default */
@@ -113,14 +111,14 @@ img {
   color: white;
 }
 
-.row:after {
+.row1:after {
   content: "";
   display: table;
   clear: both;
 }
 
 /* Six columns side by side */
-.column {
+.column1 {
   float: left;
   width: 16.66%;
 }
@@ -182,6 +180,7 @@ img {
 .subnav:hover .subnav-content {
   display: block;
 }
+
 
 </style>
 
@@ -290,33 +289,35 @@ img {
 <br><br>
 
 
-
+ <div class="content">
+  <div class="row">
+  <div class="column">
+  <div class="transbox">
 <!-- The four columns -->
     <div style="text-align:center">
-  <div class="transbox">
       <h2>Modern Villa |Revit| 2018</h2>
     <p style="text-align:left">I built a modern villa based on my friend’s dream house. I feel like an interior designer when creating this because I had a lot of creativity to make it as modern and cozy as possible. Using Revit helped me determined the house dimensions and export furniture based on my friend’s preference. I chose the rooms that had the best angle and lighting. </p>
   </div>
 </div>
 
 
-<div class="row">
-    <div class="column">
+<div class="row1">
+    <div class="column1">
       <img class="demo cursor" src="frontlivingrm2.png" style="width:100%" onclick="currentSlide(1)" alt="Small Living Room">
     </div>
-    <div class="column">
+    <div class="column1">
       <img class="demo cursor" src="downstairs.png" style="width:100%" onclick="currentSlide(2)" alt="Resting Room">
     </div>
-    <div class="column">
+    <div class="column1">
       <img class="demo cursor" src="masterrm.png" style="width:100%" onclick="currentSlide(3)" alt="Master Bedroom">
     </div>
-    <div class="column">
+    <div class="column1">
       <img class="demo cursor" src="livingrmnight.png" style="width:100%" onclick="currentSlide(4)" alt=" Main Living Room">
     </div>
-    <div class="column">
+    <div class="column1">
       <img class="demo cursor" src="gamingrm3.png" style="width:100%" onclick="currentSlide(5)" alt="Gaming Room">
     </div>    
-    <div class="column">
+    <div class="column1">
       <img class="demo cursor" src="studyrmnight.png" style="width:100%" onclick="currentSlide(6)" alt="Study Room">
     </div>
   
@@ -363,7 +364,9 @@ img {
 
 
 </div>
-
+</div>
+</div>
+</div>
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
